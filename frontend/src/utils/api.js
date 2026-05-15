@@ -1,6 +1,6 @@
 import axios from 'axios';
 const API = axios.create({
-    baseURL: 'https://jobportal-ukfr.onrender.com/api', // Backend port 5000
+   baseURL: import.meta.env.VITE_API_URL, // Backend port 5000
 });
 
 // Interceptor to inject token
